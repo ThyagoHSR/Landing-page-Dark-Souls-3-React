@@ -51,8 +51,8 @@ export const SectionMain = styled.div`
 }
 
 @media (max-width: 667px){
-    body{
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('imgs/609173.jpg');
+    .container{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('${Background}');
         background-repeat: no-repeat;
         height: 100vh;
         background-position: center;
@@ -65,7 +65,10 @@ export const SectionMain = styled.div`
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 30px;
+        padding: 10px;
+    }
+    .container h1{
+        font-size: 46px;
     }
     .container2{
         width: 100%;
