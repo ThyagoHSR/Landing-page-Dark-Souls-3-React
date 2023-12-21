@@ -2,17 +2,16 @@ import styled from "styled-components";
 import Background from '../../assets/609173.jpg'
 
 export const SectionMain = styled.div`
-   .container{
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     gap: 20px;
-    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('${Background}');
     background-repeat: no-repeat;
-    height: 100vh;
     background-size: cover;
+    height: 100vh;
 }
 .container1{
     width: 600px;
@@ -39,7 +38,7 @@ export const SectionMain = styled.div`
     font-size: 16px;
 }
 .container h1{
-    font-size: 60px;
+    font-size: 42px;
     font-weight: 900;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
@@ -85,7 +84,27 @@ export const SectionMain = styled.div`
         height:200px; 
         border-radius: 12px;
     }
+    footer{
+        font-size:14px
+    }
 
 }
 
+`
+export const Footer = styled.footer`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    gap: 5px;
+
+a{
+    color: white;
+    font-weight: bolder;
+}
+a:hover{
+    color: yellow;
+    transition: 1s;
+}
 `
